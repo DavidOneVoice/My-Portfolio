@@ -203,6 +203,7 @@ body {
 
   .hero-content {
     flex-direction: column-reverse;
+    margin-top: -4rem;
   }
 }
 
