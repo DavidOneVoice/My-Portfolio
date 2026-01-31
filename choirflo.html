@@ -36,10 +36,7 @@
       property="og:description"
       content="A simple Android app for organizing choir songs, keys, and worship line-ups."
     />
-    <meta
-      property="og:image"
-      content="https://badrudavidportfolio.netlify.app/choirflo/images/logo.png"
-    />
+    <meta property="og:image" content="./public/logo.png" />
     <meta
       property="og:url"
       content="https://badrudavidportfolio.netlify.app/choirflo"
@@ -56,11 +53,11 @@
     />
     <meta
       name="twitter:image"
-      content="https://badrudavidportfolio.netlify.app/choirflo/images/logo.png"
+      content="https://badrudavidportfolio.netlify.app/choirflo/public/logo.png"
     />
 
     <!-- Favicon -->
-    <link rel="icon" href="./images/logo.png" type="image/png" />
+    <link rel="icon" href="./public/logo.png" type="image/png" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript>
       <link rel="stylesheet" href="assets/css/noscript.css" />
@@ -90,11 +87,13 @@
         </div>
 
         <div class="hero-visual">
-          <img
-            src="./images/cf (2).jpg"
-            alt="ChoirFlo App Screenshot"
-            class="hero-mockup"
-          />
+          <div class="carousel-container">
+            <img src="./images/cf (1).jpg" class="carousel-slide" />
+            <img src="./images/cf (2).jpg" class="carousel-slide" />
+            <img src="./images/cf3.jpg" class="carousel-slide" />
+            <img src="./images/cf4.jpg" class="carousel-slide" />
+            <img src="./images/cf5.jpg" class="carousel-slide" />
+          </div>
         </div>
       </div>
     </header>
@@ -234,6 +233,16 @@
       faders.forEach((fader) => {
         appearOnScroll.observe(fader);
       });
+
+      const slides = document.querySelectorAll(".carousel-slide");
+      const container = document.querySelector(".carousel-container");
+      let currentIndex = 0;
+      const total = slides.length;
+
+      setInterval(() => {
+        currentIndex = (currentIndex + 1) % total;
+        container.style.transform = `translateX(-${currentIndex * 100}%)`;
+      }, 2000);
     </script>
   </body>
 </html>
