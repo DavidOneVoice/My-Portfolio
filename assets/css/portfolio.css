@@ -37,7 +37,7 @@ button { cursor: pointer; }
 .monogram { display: inline-grid; place-items: center; width: 36px; height: 36px; color: var(--paper); background: var(--ink); font-size: 13px; letter-spacing: -.04em; border-radius: 50%; }
 .site-nav { margin-left: auto; display: flex; align-items: center; gap: 29px; font-size: 14px; }
 .site-nav a { text-decoration: none; }
-.site-nav a:hover, .site-nav a[aria-current="page"] { text-decoration: underline; }
+.site-nav a:hover { text-decoration: underline; }
 .site-nav .nav-resume { border-bottom: 1px solid var(--ink); padding-bottom: 3px; }
 .menu-toggle { display: none; padding: 7px 12px; border: 1px solid var(--line); background: transparent; border-radius: 4px; color: var(--ink); }
 .eyebrow { display: block; margin-bottom: 22px; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; font-weight: 650; }
@@ -114,7 +114,7 @@ button { cursor: pointer; }
 .experience { margin-top: 54px; }
 .experience-title { font-size: 14px; letter-spacing: 0; padding-bottom: 18px; margin-bottom: 0; border-bottom: 1px solid var(--line); }
 .experience-row { display: grid; grid-template-columns: .55fr 1fr 1.1fr; gap: 28px; padding-block: 22px; border-bottom: 1px solid var(--line); }
-.experience-row time, .experience-date { font-size: 12px; color: var(--muted); }
+.experience-date { font-size: 12px; color: var(--muted); }
 .experience-row h3 { font-size: 16px; letter-spacing: -.01em; margin-bottom: 5px; }
 .experience-row p { font-size: 14px; color: var(--muted); margin-bottom: 0; }
 .experience-row .company { font-size: 13px; }

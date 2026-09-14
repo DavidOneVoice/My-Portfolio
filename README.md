@@ -19,7 +19,7 @@ Open `http://localhost:8000`. No package installation or build step is required.
 - `assets/css/portfolio.css`: layout, typography, responsive rules and reduced-motion support.
 - `assets/js/portfolio.js`: mobile navigation and contact-form feedback.
 - `assets/documents/Badru_Olumide_David_Resume.pdf`: downloadable developer résumé.
-- `assets/images/`: favicon and the existing Gataama and Honest Scholars screenshots used by the refreshed pages.
+- `assets/images/`: favicon and losslessly compressed WebP screenshots for Gataama and Honest Scholars.
 
 Content is available without JavaScript. External project links open in a new tab. The résumé is a local PDF download.
 
@@ -37,6 +37,8 @@ This repository is a plain static site. It can be published from the repository 
 
 Review the refresh on its branch or a deploy preview before merging into the production branch.
 
-## Legacy assets
+## Performance and legacy template
 
-The previous site used HTML5 UP's Big Picture template. Its original `LICENSE.txt`, `README.txt` and legacy assets remain in the repository. The refreshed pages use the new portfolio stylesheet and JavaScript and do not load the old template, jQuery, icon fonts or gallery scripts.
+The current pages load one small stylesheet and one deferred JavaScript file. They use system fonts, and both project screenshots are lazy-loaded, losslessly compressed WebP files with explicit dimensions. The résumé is downloaded only when requested.
+
+Unused template stylesheets, Sass sources, jQuery plugins, icon fonts, old gallery images and the unrelated Android APK have been removed. The previous site used HTML5 UP's Big Picture template; its original `LICENSE.txt` is retained for attribution and historical context. Earlier code and assets remain available in Git history.
