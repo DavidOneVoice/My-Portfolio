@@ -18,7 +18,7 @@ Open `http://localhost:8000`. No package installation or build step is required.
 - `projects.html`: more detailed project notes; existing page URL is preserved.
 - `assets/css/portfolio.css`: layout, typography, responsive rules and reduced-motion support.
 - `assets/js/portfolio.js`: mobile navigation and contact-form feedback.
-- `assets/documents/Badru_Olumide_David_Resume.pdf`: downloadable developer résumé.
+- `assets/documents/Badru_Olumide_David_Developer_Resume.pdf`: downloadable developer résumé.
 - `assets/images/`: favicon and losslessly compressed WebP screenshots for Gataama and Honest Scholars.
 
 Content is available without JavaScript. External project links open in a new tab. The résumé is a local PDF download.
